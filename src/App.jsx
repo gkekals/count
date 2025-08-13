@@ -5,10 +5,10 @@ import Controller from './components/Controller'
 
 function App() {
 
-  const [count, setCount]= useState(0)
+  const [count, setCount] = useState(0)
 
-  const onClickButton=(value)=>{
-    setCount(count+value)
+  const onClickButton = (value) => {
+    setCount(count + value)
   }
   const buttonValues = [-100, -10, -1, 1, 10, 100];
 
@@ -16,11 +16,11 @@ function App() {
     <div className='App'>
       <h1>Simple Counter</h1>
       <section>
-        <Viewer count={count}/>
+        <Viewer count={count} />
       </section>
-     <section>
-      <Controller onClickButton={onClickButton}  {...buttonValues}/>
-     </section>
+      <section>
+        <Controller onClickButton={onClickButton}  {...buttonValues} />
+      </section>
     </div>
   )
 }
